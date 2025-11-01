@@ -3,9 +3,6 @@ description: Personal blog
 theme: minima
 url: https://andrewstephenson-v1.github.io
 
-author:
-  name: Andrew Stephenson
-
 minima:
   skin: classic
   social_links:
