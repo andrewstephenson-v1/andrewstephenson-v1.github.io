@@ -2,3 +2,24 @@ title: Andrew Stephenson
 description: Personal blog
 theme: minima
 url: https://andrewstephenson-v1.github.io
+
+author:
+  name: Andrew Stephenson
+  email: ""
+
+minima:
+  skin: classic
+  social_links:
+    - platform: github
+      user_url: https://github.com/andrewstephenson
+
+sass:
+  style: compressed
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: Andrew Stephenson

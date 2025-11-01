@@ -1,0 +1,130 @@
+---
+# Only the main Sass file needs front matter so Jekyll processes it.
+---
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@import "minima";
+
+$accent: #2f5bea;
+$text-color: #1f2430;
+$muted: #5c6470;
+$border: #e6e9f2;
+$code-bg: #f5f7fb;
+
+body {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  background: #ffffff;
+  color: $text-color;
+  line-height: 1.7;
+}
+
+.wrapper {
+  max-width: 780px;
+  padding: 0 1.5rem;
+
+  @media (max-width: 600px) {
+    padding: 0 1.2rem;
+  }
+}
+
+a {
+  color: $accent;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  transition: color 0.15s ease;
+
+  &:hover,
+  &:focus {
+    color: darken($accent, 8%);
+  }
+}
+
+.site-header {
+  border: 0;
+  background: #ffffff;
+  border-bottom: 1px solid $border;
+  box-shadow: none;
+
+  .site-title {
+    font-weight: 600;
+    letter-spacing: 0.03em;
+  }
+}
+
+.site-nav .page-link {
+  color: $muted;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+.page-content {
+  padding: 2.5rem 0 3rem;
+}
+
+.page-content h1,
+.page-content h2,
+.page-content h3 {
+  font-weight: 600;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1.8rem;
+}
+
+.post-list > li {
+  border: 1px solid $border;
+  border-radius: 12px;
+  padding: 1.6rem 1.8rem;
+  background: #ffffff;
+  transition: border-color 0.2s ease;
+
+  &:hover {
+    border-color: lighten($accent, 25%);
+  }
+}
+
+.post-meta {
+  color: $muted;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+.post-content {
+  border: 1px solid $border;
+  border-radius: 14px;
+  padding: 2.5rem;
+}
+
+code,
+pre {
+  background: $code-bg;
+  border-radius: 6px;
+}
+
+pre {
+  padding: 1rem 1.2rem;
+  overflow-x: auto;
+}
+
+blockquote {
+  border-left: 3px solid $accent;
+  margin: 1.6rem 0;
+  padding: 0.8rem 1.2rem;
+  color: $muted;
+  background: rgba($accent, 0.05);
+}
+
+footer.site-footer {
+  border-top: 1px solid $border;
+  background: #ffffff;
+  color: $muted;
+}
